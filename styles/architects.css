@@ -4,6 +4,58 @@
 /* shared styles here */
 * {
     font-family: "Work Sans", sans-serif;
+}
+.btn-primary{
+    background-color: #ff900e;
+    border: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
 
+/* header style  */
 
+header{
+    padding: 20px 200px;
+    background-color: rgba(255, 144, 14, 0.10);
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav > h1{
+    color: #131313;
+    font-size: 3rem;
+}
+header > nav > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header > nav > ul > li{
+    list-style: none;
+    margin-right: 20px;
+    color: #424242;
+}
+/* banner */
+.banner{
+
+}
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #727272;
 }
