@@ -13,6 +13,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* header style  */
@@ -58,4 +59,29 @@ header > nav > ul > li{
 }
 .banner-description{
     color: #727272;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* responsiveness for mobile */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    } 
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* responsiveness for medium devices */
+@media screen and (min-width: 577px) and (max-width: 960px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
