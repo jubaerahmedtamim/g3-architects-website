@@ -1,0 +1,9 @@
+/* work sans from google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* shared styles here */
+* {
+    font-family: "Work Sans", sans-serif;
+
+
+}
