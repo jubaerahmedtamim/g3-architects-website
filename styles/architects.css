@@ -109,7 +109,7 @@ main{
 
 .features{
     display: flex;
-    gap: 6.25rem;
+    gap: 2rem;
 }
 .features-content .section-title{
     padding-left:2rem;
@@ -121,6 +121,31 @@ main{
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
+}
+
+.features-img img{
+    margin-left: 90px ;
+    height: 80%;
+}
+.ten-year-badge{
+    background-color: #ff900e;
+    border-radius: .5rem;
+    color: #fff;
+    width: 21rem;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    bottom: 100px;
+
+}
+.ten-year-badge h2{
+    font-size: 4rem;
+    margin: 0;
+
+}
+.ten-year-badge p{
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 
@@ -137,9 +162,7 @@ main{
     text-align: center;
     padding: 2.5rem;
 }
-.facts-container .card img{
 
-}
 .card-stats{
     font-size: 2.8rem;
     color: #424242;
@@ -161,6 +184,14 @@ main{
     gap: 1.5rem;
     
 }
+/* footer  */
+footer{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 144, 14, 0.10);
+    text-align: center;
+    padding: 1rem;
+}
 
 /* responsiveness for mobile */
 
@@ -168,10 +199,7 @@ main{
     header{
         padding: 20px;
     } 
-    nav{
-        flex-direction: column;
-    }
-    .teams-container{
+    nav, .teams-container, .features{
         flex-direction: column;
     }
     .teams-img-container{
@@ -195,6 +223,11 @@ main{
         width: 50%;
         margin: 0 auto;
     }
+    .features-img img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     
 }
@@ -204,7 +237,7 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav,.features{
         flex-direction: column;
     }
     .teams-container{
