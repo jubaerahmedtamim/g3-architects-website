@@ -76,6 +76,42 @@ header > nav > ul > li{
     }
 }
 
+/* main section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.features-content{
+    padding: 0rem 5rem;
+}
+.feature-title .quick-list-text{
+    font-size: 3rem;
+    color: #727272;
+    font-weight: 500;
+}
+.feature-title .of-our-text{
+    font-size: 3rem;
+    color: #131313;
+    font-weight: 700;
+}
+.feature-title .feature-text{
+    font-size: 3rem;
+    color: #ff900e;
+    font-weight: 700;
+}
+
 /* responsiveness for medium devices */
 @media screen and (min-width: 577px) and (max-width: 960px){
     header{
