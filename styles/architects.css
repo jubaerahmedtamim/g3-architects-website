@@ -15,12 +15,22 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.section-title{
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 500;    
+}
+
+.text-light-gray{
+    color: #727272;
+}
 
 /* header style  */
 
 header{
     padding: 20px 200px;
     background-color: rgba(255, 144, 14, 0.10);
+    margin-bottom: 3rem;
 }
 nav{
     display: flex;
@@ -57,24 +67,12 @@ header > nav > ul > li{
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color: #727272;
-}
+
 
 .banner img{
     width: 100%;
 }
 
-/* responsiveness for mobile */
-
-@media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-    } 
-    nav{
-        flex-direction: column;
-    }
-}
 
 /* main section */
 main{
@@ -85,6 +83,7 @@ main{
 .teams-container{
     display: flex;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .teams-img-container{
@@ -98,19 +97,36 @@ main{
 }
 .feature-title .quick-list-text{
     font-size: 3rem;
-    color: #727272;
     font-weight: 500;
 }
-.feature-title .of-our-text{
-    font-size: 3rem;
-    color: #131313;
-    font-weight: 700;
-}
+
 .feature-title .feature-text{
     font-size: 3rem;
     color: #ff900e;
     font-weight: 700;
 }
+/* responsiveness for mobile */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    } 
+    nav{
+        flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+    }
+    .features-content{
+        padding: 0 1rem;
+    }
+    
+}
+
 
 /* responsiveness for medium devices */
 @media screen and (min-width: 577px) and (max-width: 960px){
@@ -119,5 +135,16 @@ main{
     }
     nav{
         flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column-reverse;
+    }
+    .teams-img-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.5rem;
+    }
+    .features-content{
+        padding: 0 1rem;
+        margin-bottom: 1rem;
     }
 }
